@@ -22,7 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "lps22hh.h"
-#include "custom_bus.h"
+#include "custom_mems_conf.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -111,10 +111,10 @@ int main(void)
   /* Configure the driver */
   LPS22HH_io_ctx.BusType = LPS22HH_I2C_BUS; /* I2C */
   LPS22HH_io_ctx.Address = LPS22HH_I2C_ADDRESS;
-  LPS22HH_io_ctx.Init = BSP_I2C2_Init;
-  LPS22HH_io_ctx.DeInit = BSP_I2C2_DeInit;
-  LPS22HH_io_ctx.ReadReg = BSP_I2C2_ReadReg;
-  LPS22HH_io_ctx.WriteReg = BSP_I2C2_WriteReg;
+  LPS22HH_io_ctx.Init = CUSTOM_LPS22HH_0_I2C_Init;
+  LPS22HH_io_ctx.DeInit = CUSTOM_LPS22HH_0_I2C_DeInit;
+  LPS22HH_io_ctx.ReadReg = CUSTOM_LPS22HH_0_I2C_ReadReg;
+  LPS22HH_io_ctx.WriteReg = CUSTOM_LPS22HH_0_I2C_WriteReg;
 
   LPS22HH_RegisterBusIO(&LPS22HH_Obj, &LPS22HH_io_ctx);
   LPS22HH_Init(&LPS22HH_Obj);

@@ -13,12 +13,13 @@
 
 ## Software tools
 * [STM32CubeIDE](https://www.st.com/stm32cubeide)
+* [STM32CubeMX](https://www.st.com/stm32cubemx)
 
 ## How to use
 * Clone the repo
-* Open B-U585I-IOT02A-LPS22HH.ioc with STM32CubeMX
+* Open B-U585I-IOT02A-LPS22HH.ioc with [STM32CubeMX](https://www.st.com/stm32cubemx)
 * Generate code
-* Open the project with STM32CubeIDE
+* Open the project with [STM32CubeIDE](https://www.st.com/stm32cubeide)
 * Build and load the project.
 
 
